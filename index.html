@@ -14,15 +14,62 @@
             extend: {
               colors: {
                 clifford: '#da373d',
+                'gray-color': '#707070',
+                'primary-color': '#B68C5A'
               }
             }
           }
         }
       </script>
+      <!-- font awesome -->
+      <script src="https://kit.fontawesome.com/464c52fe79.js" crossorigin="anonymous"></script>
+      <!-- Css -->
+      <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+        /* EB GaraMond */
+        @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@800&display=swap');
+        .font-poppin{
+            font-family: 'Poppins', sans-serif;
+        }
+        .font-eb{
+            font-family: 'EB Garamond', serif;
+        }
+      </style>
 </head>
 <body>
-    <header >
-        
+    <header class="max-w-screen-xl mt-12 mx-auto">
+        <!-- Nav Bar -->
+        <nav class="font-poppin flex justify-between items-center">
+            <div>
+                <img src="./images/logo1.png" alt="">
+            </div>
+            <div class="flex text-base gap-7 font-normal text-gray-color">
+                <p>Home <i class="fa-solid fa-chevron-right "></i></p>
+                <p>Services <i class="fa-solid fa-chevron-right "></i></p>
+                <p>Cases <i class="fa-solid fa-chevron-right "></i></p>
+                <p>Blog <i class="fa-solid fa-chevron-right "></i></p>
+                <p>Contact us<i class="fa-solid fa-chevron-right "></i></p>
+            </div>
+            <div >
+                <button class="btn  bg-primary-color text-white font-normal">Free Consultation</button>
+            </div>
+        </nav>
+        <!-- Banner Part -->
+        <section class="mt-12">
+            <div class="hero min-h-[80vh] rounded-xl" style="background-image: url(./images/banner.png); ">
+                <div class="bg-opacity-60"></div>
+                <div class="hero-content text-center text-neutral-content">
+                  <div class="max-w-2xl">
+                    <h1 class="mb-5 text-7xl font-bold font-eb ">We Provide Effective Legal Solutions</h1>
+                    <p class="mb-5 font-poppin text-base">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                    <div class="flex gap-5">
+                        <input type="email" name="email" class="input w-full " placeholder="Search your Services" id="">
+                        <button class="btn bg-primary-color text-white font-normal border-none px-6 hover:bg-primary-color">Search</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </section>
     </header>
     <main>
 
